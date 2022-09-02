@@ -84,7 +84,7 @@ class SharedPreferences(context: Context) : LocalDataSource {
 
     private companion object {
         const val defaultHeight = 0
-        
+
         const val keyHeight = "height"
 
         const val keyHeightUnit = "height_unit"
