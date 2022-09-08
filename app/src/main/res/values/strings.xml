@@ -7,10 +7,10 @@
     <string name="obese1">1 Degree Obesity</string>
     <string name="obese2">2 Degree Obesity</string>
 
-    <string name="below_18" translatable="false"><![CDATA[<18.5]]></string>
+    <string name="below_18" translatable="false"><![CDATA[< 18.5]]></string>
     <string name="between_18_25" translatable="false">18.5 - 25</string>
     <string name="between_25_30" translatable="false">25 - 30</string>
     <string name="between_30_35" translatable="false">30 - 35</string>
-    <string name="above_35" translatable="false"><![CDATA[>35]]></string>
+    <string name="above_35" translatable="false"><![CDATA[> 35]]></string>
 
 </resources>
