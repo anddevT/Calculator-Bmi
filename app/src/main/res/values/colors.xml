@@ -7,4 +7,16 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="underweight">#3892e1</color>
+    <color name="underweight_bright">#99bbd9</color>
+    <color name="normal_weight">#19c73c</color>
+    <color name="normal_weight_bright">#a4ecb2</color>
+    <color name="overweight">#e4d33a</color>
+    <color name="overweight_bright">#e9e08f</color>
+    <color name="obese1">#f4b13d</color>
+    <color name="obese1_bright">#e7cd9f</color>
+    <color name="obese2">#ed453c</color>
+    <color name="obese2_bright">#edaca8</color>
+
 </resources>
