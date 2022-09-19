@@ -65,7 +65,7 @@
         android:layout_marginEnd="@dimen/default_margin"
         android:background="@drawable/square_underweight"
         app:layout_constraintBottom_toBottomOf="@id/under_weight_view"
-        app:layout_constraintEnd_toStartOf="@id/underweight"
+        app:layout_constraintEnd_toStartOf="@id/underweight_text"
         app:layout_constraintStart_toStartOf="@id/under_weight_view"
         app:layout_constraintTop_toTopOf="@id/under_weight_view" />
 
@@ -76,7 +76,7 @@
         android:layout_marginEnd="@dimen/default_margin"
         android:background="@drawable/square_normal_weight"
         app:layout_constraintBottom_toBottomOf="@id/normal_weight_view"
-        app:layout_constraintEnd_toStartOf="@id/normal_weight"
+        app:layout_constraintEnd_toStartOf="@id/normal_weight_text"
         app:layout_constraintStart_toStartOf="@id/normal_weight_view"
         app:layout_constraintTop_toTopOf="@id/normal_weight_view" />
 
@@ -87,7 +87,7 @@
         android:layout_marginEnd="@dimen/default_margin"
         android:background="@drawable/square_overweight"
         app:layout_constraintBottom_toBottomOf="@id/over_weight_view"
-        app:layout_constraintEnd_toStartOf="@id/overweight"
+        app:layout_constraintEnd_toStartOf="@id/overweight_text"
         app:layout_constraintStart_toStartOf="@id/over_weight_view"
         app:layout_constraintTop_toTopOf="@id/over_weight_view" />
 
@@ -98,7 +98,7 @@
         android:layout_marginEnd="@dimen/default_margin"
         android:background="@drawable/square_obesity1"
         app:layout_constraintBottom_toBottomOf="@id/obesity1_view"
-        app:layout_constraintEnd_toStartOf="@id/obesity1"
+        app:layout_constraintEnd_toStartOf="@id/obesity1_text"
         app:layout_constraintStart_toStartOf="@id/obesity1_view"
         app:layout_constraintTop_toTopOf="@id/obesity1_view" />
 
@@ -109,13 +109,13 @@
         android:layout_marginEnd="@dimen/default_margin"
         android:background="@drawable/square_obesity2"
         app:layout_constraintBottom_toBottomOf="@id/obesity2_view"
-        app:layout_constraintEnd_toStartOf="@id/obesity2"
+        app:layout_constraintEnd_toStartOf="@id/obesity2_text"
         app:layout_constraintStart_toStartOf="@id/obesity2_view"
         app:layout_constraintTop_toTopOf="@id/obesity2_view" />
 
 
     <TextView
-        android:id="@+id/underweight"
+        android:id="@+id/underweight_text"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:gravity="center_vertical"
@@ -139,7 +139,7 @@
 
 
     <TextView
-        android:id="@+id/normal_weight"
+        android:id="@+id/normal_weight_text"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:gravity="center_vertical"
@@ -163,7 +163,7 @@
 
 
     <TextView
-        android:id="@+id/overweight"
+        android:id="@+id/overweight_text"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:gravity="center_vertical"
@@ -187,7 +187,7 @@
 
 
     <TextView
-        android:id="@+id/obesity1"
+        android:id="@+id/obesity1_text"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:gravity="center_vertical"
@@ -211,7 +211,7 @@
 
 
     <TextView
-        android:id="@+id/obesity2"
+        android:id="@+id/obesity2_text"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:gravity="center_vertical"
