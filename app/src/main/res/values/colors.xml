@@ -21,4 +21,6 @@
 
     <color name="text_color">#000000</color>
 
+    <color name="pointer">#464141</color>
+    
 </resources>
