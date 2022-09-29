@@ -13,4 +13,8 @@
     <string name="between_30_35" translatable="false">30 - 35</string>
     <string name="above_35" translatable="false"><![CDATA[> 35]]></string>
 
+    <string name="ideal_weight">Ideal Weight</string>
+    <string name="correct_weight">Correct Weight</string>
+    <string name="under_over_weight">Underweight/Overweight</string>
+
 </resources>
