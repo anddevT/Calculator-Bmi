@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="text_size_normal">24sp</dimen>
+    <dimen name="text_size_normal">27sp</dimen>
+    <dimen name="text_size_big">33sp</dimen>
+    <dimen name="text_size_very_big">57sp</dimen>
+
     <dimen name="square_size">37dp</dimen>
     <dimen name="default_margin">30dp</dimen>
+    <dimen name="small_margin">15dp</dimen>
+
+    <dimen name="pointer_height">60dp</dimen>
+
 
 </resources>
