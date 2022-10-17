@@ -1,10 +1,11 @@
-package com.anddev404.calculatorbmi
+package com.anddev404.calculatorbmi.custom_views
 
 import android.content.Context
 import android.graphics.Color
 import android.util.AttributeSet
 import android.view.View
 import android.widget.LinearLayout
+import com.anddev404.calculatorbmi.R
 
 class BmiView(context: Context?, attrs: AttributeSet?) : LinearLayout(context, attrs) {
 
@@ -19,13 +20,12 @@ class BmiView(context: Context?, attrs: AttributeSet?) : LinearLayout(context, a
         inflate(context, R.layout.bmi_view, this)
         initializeViews()
 
-        var highlightedView = -1
         val typedArray = context?.obtainStyledAttributes(attrs, R.styleable.BmiView)
 
         typedArray?.let {
             try {
 
-                highlightedView = typedArray.getInt(R.styleable.BmiView_highlight, -1)
+                val highlightedView = typedArray.getInt(R.styleable.BmiView_highlight, -1)
 
                 highlightView(highlightedView)
 
