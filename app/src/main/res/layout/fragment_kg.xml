@@ -8,7 +8,7 @@
         android:id="@+id/kg_edit_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="kg"
+        android:hint="@string/kg"
         android:inputType="numberDecimal"
         android:maxLength="6"
         android:minEms="4"
