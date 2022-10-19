@@ -13,5 +13,9 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
         <item name="android:textColor">@color/text_color</item>
+        <item name="android:editTextColor">@color/edit_text_text_color</item>
+        <item name="backgroundTint">@color/edit_text_color</item>
+        <item name="android:textCursorDrawable">@drawable/edit_text_cursor</item>
+
     </style>
 </resources>
