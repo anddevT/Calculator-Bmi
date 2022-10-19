@@ -19,10 +19,12 @@
 
     <string name="cm">cm</string>
     <string name="in">in</string>
+    <string name="ft">ft</string>
     <string name="ft_in">ft+in</string>
 
     <string name="kg">kg</string>
     <string name="lb">lb</string>
+    <string name="st">st</string>
     <string name="st_lb">st+lb</string>
 
 </resources>
