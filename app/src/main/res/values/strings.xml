@@ -17,4 +17,12 @@
     <string name="correct_weight">Correct Weight</string>
     <string name="under_over_weight">Underweight/Overweight</string>
 
+    <string name="cm">cm</string>
+    <string name="in">in</string>
+    <string name="ft_in">ft+in</string>
+
+    <string name="kg">kg</string>
+    <string name="lb">lb</string>
+    <string name="st_lb">st+lb</string>
+
 </resources>
