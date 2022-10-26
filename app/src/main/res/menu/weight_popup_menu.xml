@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/kg" />
+    <item android:title="@string/lb" />
+    <item android:title="@string/st_lb" />
+
+</menu>
