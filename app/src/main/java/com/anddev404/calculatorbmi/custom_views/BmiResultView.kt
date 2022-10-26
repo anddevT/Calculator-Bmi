@@ -2,6 +2,7 @@ package com.anddev404.calculatorbmi.custom_views
 
 import android.content.Context
 import android.util.AttributeSet
+import android.view.View.OnTouchListener
 import android.widget.LinearLayout
 import android.widget.SeekBar
 import android.widget.TextView
@@ -30,6 +31,8 @@ class BmiResultView(context: Context?, attrs: AttributeSet?) : LinearLayout(cont
                 typedArray.recycle()
             }
         }
+
+        seekBar.setOnTouchListener(OnTouchListener { view, motionEvent -> true })
 
     }
 
