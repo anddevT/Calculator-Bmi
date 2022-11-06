@@ -10,5 +10,7 @@
 
     <dimen name="pointer_height">40dp</dimen>
 
+    <dimen name="cardview_corner_radius">8dp</dimen>
+
 
 </resources>
