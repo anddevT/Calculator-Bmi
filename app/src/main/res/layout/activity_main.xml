@@ -1,18 +1,158 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/top_card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/small_margin"
+                app:cardCornerRadius="@dimen/cardview_corner_radius"
+                app:layout_constraintBottom_toTopOf="@+id/middle_card_view"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/default_margin">
+
+                    <TextView
+                        android:id="@+id/height_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/default_margin"
+                        android:text="@string/height"
+                        android:textSize="@dimen/text_size_big"
+                        app:layout_constrainedWidth="true"
+                        app:layout_constraintBottom_toTopOf="@id/weight_textview"
+                        app:layout_constraintEnd_toStartOf="@+id/height_fragment"
+                        app:layout_constraintHorizontal_chainStyle="spread_inside"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.fragment.app.FragmentContainerView
+                        android:id="@+id/height_fragment"
+                        android:name="com.anddev404.calculatorbmi.fragments.CmFragment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="@id/height_textview"
+                        app:layout_constraintEnd_toStartOf="@+id/change_height_unit_button"
+                        app:layout_constraintStart_toEndOf="@+id/height_textview"
+                        app:layout_constraintTop_toTopOf="@id/height_textview"
+                        tools:layout="@layout/fragment_cm" />
+
+                    <Button
+                        android:id="@+id/change_height_unit_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/icon_drop_down"
+                        android:text="@string/cm"
+                        app:layout_constrainedWidth="true"
+                        app:layout_constraintBottom_toBottomOf="@id/height_fragment"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/height_fragment"
+                        app:layout_constraintTop_toTopOf="@id/height_fragment" />
+
+
+                    <TextView
+                        android:id="@+id/weight_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/weight"
+                        android:textSize="@dimen/text_size_big"
+                        app:layout_constrainedWidth="true"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/weight_fragment"
+                        app:layout_constraintHorizontal_chainStyle="spread_inside"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/height_textview" />
+
+                    <androidx.fragment.app.FragmentContainerView
+                        android:id="@+id/weight_fragment"
+                        android:name="com.anddev404.calculatorbmi.fragments.KgFragment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="@id/weight_textview"
+                        app:layout_constraintEnd_toStartOf="@+id/change_weight_unit_button"
+                        app:layout_constraintStart_toEndOf="@+id/weight_textview"
+                        app:layout_constraintTop_toTopOf="@id/weight_textview"
+                        tools:layout="@layout/fragment_kg" />
+
+                    <Button
+                        android:id="@+id/change_weight_unit_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/icon_drop_down"
+                        android:text="@string/kg"
+                        app:layout_constrainedWidth="true"
+                        app:layout_constraintBottom_toBottomOf="@id/weight_fragment"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/weight_fragment"
+                        app:layout_constraintTop_toTopOf="@id/weight_fragment" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/middle_card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/small_margin"
+                android:layout_marginBottom="@dimen/default_margin"
+                app:cardCornerRadius="@dimen/cardview_corner_radius"
+                app:layout_constraintBottom_toTopOf="@+id/bottom_card_view"
+                app:layout_constraintTop_toBottomOf="@+id/top_card_view">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/small_margin">
+
+                    <com.anddev404.calculatorbmi.custom_views.BmiResultView
+                        android:id="@+id/result"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/default_margin"
+                        android:layout_marginEnd="@dimen/default_margin" />
+
+                    <com.anddev404.calculatorbmi.custom_views.BmiView
+                        android:id="@+id/result_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/default_margin"
+                        android:layout_marginEnd="@dimen/default_margin" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/bottom_card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/small_margin"
+                app:cardCornerRadius="@dimen/cardview_corner_radius"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/middle_card_view">
+
+                <include
+                    layout="@layout/bottom_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/default_margin" />
+
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>
