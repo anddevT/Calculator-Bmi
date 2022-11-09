@@ -14,7 +14,7 @@ class BmiResultView(context: Context?, attrs: AttributeSet?) : LinearLayout(cont
     private var text: TextView
 
     init {
-        inflate(context, R.layout.bmi_result, this)
+        inflate(context, R.layout.custom_view_bmi_bar_view, this)
 
         seekBar = findViewById(R.id.bmi_seek_bar)
         text = findViewById(R.id.bmi_text)

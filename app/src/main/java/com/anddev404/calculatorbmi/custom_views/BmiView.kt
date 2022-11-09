@@ -17,7 +17,7 @@ class BmiView(context: Context?, attrs: AttributeSet?) : LinearLayout(context, a
 
 
     init {
-        inflate(context, R.layout.bmi_view, this)
+        inflate(context, R.layout.custom_view_bmi_table_view, this)
         initializeViews()
 
         val typedArray = context?.obtainStyledAttributes(attrs, R.styleable.BmiView)
