@@ -36,7 +36,6 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <TextView
-                android:id="@+id/ideal_weight"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="6"
@@ -44,7 +43,7 @@
                 android:textSize="@dimen/text_size_normal" />
 
             <TextView
-                android:id="@+id/ideal_weight_right"
+                android:id="@+id/ideal_weight_textview"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="4"
@@ -68,7 +67,6 @@
             app:layout_constraintTop_toBottomOf="@id/linearLayout1">
 
             <TextView
-                android:id="@+id/ideal_weight2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="6"
@@ -76,7 +74,7 @@
                 android:textSize="@dimen/text_size_normal" />
 
             <TextView
-                android:id="@+id/ideal_weight_right2"
+                android:id="@+id/correct_weight_textview"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="4"
@@ -101,7 +99,7 @@
             app:layout_constraintTop_toBottomOf="@id/linearLayout2">
 
             <TextView
-                android:id="@+id/ideal_weight3"
+                android:id="@+id/underweight_overweight_left_textview"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="6"
@@ -109,7 +107,7 @@
                 android:textSize="@dimen/text_size_normal" />
 
             <TextView
-                android:id="@+id/ideal_weight_right3"
+                android:id="@+id/underweight_overweight_textview"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="4"
