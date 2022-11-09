@@ -7,7 +7,7 @@ import android.view.View
 import android.widget.LinearLayout
 import com.anddev404.calculatorbmi.R
 
-class BmiView(context: Context?, attrs: AttributeSet?) : LinearLayout(context, attrs) {
+class BmiTableView(context: Context?, attrs: AttributeSet?) : LinearLayout(context, attrs) {
 
     private lateinit var underWeightView: View
     private lateinit var normalWeightView: View

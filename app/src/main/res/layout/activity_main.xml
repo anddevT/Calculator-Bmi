@@ -120,15 +120,15 @@
                     android:orientation="vertical"
                     android:paddingBottom="@dimen/small_margin">
 
-                    <com.anddev404.calculatorbmi.custom_views.BmiResultView
-                        android:id="@+id/result"
+                    <com.anddev404.calculatorbmi.custom_views.BmiBarView
+                        android:id="@+id/result_bar"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/default_margin"
                         android:layout_marginEnd="@dimen/default_margin" />
 
-                    <com.anddev404.calculatorbmi.custom_views.BmiView
-                        android:id="@+id/result_2"
+                    <com.anddev404.calculatorbmi.custom_views.BmiTableView
+                        android:id="@+id/result_table"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/default_margin"

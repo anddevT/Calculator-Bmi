@@ -8,7 +8,7 @@ import android.widget.SeekBar
 import android.widget.TextView
 import com.anddev404.calculatorbmi.R
 
-class BmiResultView(context: Context?, attrs: AttributeSet?) : LinearLayout(context, attrs) {
+class BmiBarView(context: Context?, attrs: AttributeSet?) : LinearLayout(context, attrs) {
 
     private var seekBar: SeekBar
     private var text: TextView
