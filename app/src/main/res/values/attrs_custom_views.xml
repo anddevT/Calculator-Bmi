@@ -1,6 +1,6 @@
 <resources>
-    <declare-styleable name="BmiView">
-        <attr name="highlight" format="integer" />
+    <declare-styleable name="BmiTableView">
+        <attr name="highlight" format="float" />
     </declare-styleable>
 
     <declare-styleable name="BmiResultView">
