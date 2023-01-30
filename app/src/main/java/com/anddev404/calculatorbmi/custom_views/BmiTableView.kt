@@ -20,12 +20,12 @@ class BmiTableView(context: Context?, attrs: AttributeSet?) : LinearLayout(conte
         inflate(context, R.layout.custom_view_bmi_table_view, this)
         initializeViews()
 
-        val typedArray = context?.obtainStyledAttributes(attrs, R.styleable.BmiView)
+        val typedArray = context?.obtainStyledAttributes(attrs, R.styleable.BmiTableView)
 
         typedArray?.let {
             try {
 
-                val highlightedView = typedArray.getInt(R.styleable.BmiView_highlight, -1)
+                val highlightedView = typedArray.getFloat(R.styleable.BmiTableView_highlight, 0f)
 
                 highlightView(highlightedView)
 
@@ -35,10 +35,10 @@ class BmiTableView(context: Context?, attrs: AttributeSet?) : LinearLayout(conte
         }
     }
 
-    fun highlightView(highlightedView: Int) {
+    fun highlightView(bmi: Float) {
         clearAllBackgroundColors()
 
-        when (highlightedView) {
+        when (bmiToHighlight(bmi)) {
             HIGHLIGHT_UNDER_WEIGHT -> underWeightView.setBackgroundColor(resources.getColor(R.color.underweight_bright))
             HIGHLIGHT_NORMAL_WEIGHT -> normalWeightView.setBackgroundColor(resources.getColor(R.color.normal_weight_bright))
             HIGHLIGHT_OVER_WEIGHT -> overWeightView.setBackgroundColor(resources.getColor(R.color.overweight_bright))
@@ -64,11 +64,23 @@ class BmiTableView(context: Context?, attrs: AttributeSet?) : LinearLayout(conte
     }
 
     companion object {
+        const val HIGHLIGHT_NONE = 0
         const val HIGHLIGHT_UNDER_WEIGHT = 1
         const val HIGHLIGHT_NORMAL_WEIGHT = 2
         const val HIGHLIGHT_OVER_WEIGHT = 3
         const val HIGHLIGHT_OBESITY_1 = 4
         const val HIGHLIGHT_OBESITY_2 = 5
+
+        fun bmiToHighlight(bmi: Float): Int {
+            return when {
+                bmi > 35 -> HIGHLIGHT_OBESITY_2
+                bmi > 30 -> HIGHLIGHT_OBESITY_1
+                bmi > 25 -> HIGHLIGHT_OVER_WEIGHT
+                bmi > 18.5 -> HIGHLIGHT_NORMAL_WEIGHT
+                bmi > 0 -> HIGHLIGHT_UNDER_WEIGHT
+                else -> HIGHLIGHT_NONE
+            }
+        }
     }
 
 }

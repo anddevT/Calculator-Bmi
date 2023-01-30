@@ -48,7 +48,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="4"
                 android:gravity="end|center_vertical"
-                android:text="@{idealWeight}"
+                android:text="@{idealWeight, default = `@string/three_dots`}"
                 android:textSize="@dimen/text_size_normal"
                 tools:text="75kg" />
         </LinearLayout>
@@ -79,7 +79,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="4"
                 android:gravity="end|center_vertical"
-                android:text="@{correctWeight}"
+                android:text="@{correctWeight, default = `@string/three_dots`}"
                 android:textSize="@dimen/text_size_normal"
                 tools:text="70-80 kg" />
 
@@ -112,7 +112,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="4"
                 android:gravity="end|center_vertical"
-                android:text="@{underWeightOrOverWeight}"
+                android:text="@{underWeightOrOverWeight, default = `@string/three_dots`}"
                 android:textSize="@dimen/text_size_normal"
                 tools:text="10kg" />
         </LinearLayout>
